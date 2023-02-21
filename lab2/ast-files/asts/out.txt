@@ -1,0 +1,38 @@
+TranslationUnitDecl 0x55d69283e898 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55d69283ee10 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55d69283eb30 '__int128'
+|-TypedefDecl 0x55d69283ee80 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55d69283eb50 'unsigned __int128'
+|-TypedefDecl 0x55d69283f158 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55d69283ef60 'struct __NSConstantString_tag'
+|   `-Record 0x55d69283eed8 '__NSConstantString_tag'
+|-TypedefDecl 0x55d69283f1f0 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55d69283f1b0 'char *'
+|   `-BuiltinType 0x55d69283e930 'char'
+|-TypedefDecl 0x55d69283f4b8 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55d69283f460 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55d69283f2d0 'struct __va_list_tag'
+|     `-Record 0x55d69283f248 '__va_list_tag'
+`-FunctionDecl 0x55d692898120 </home/paul/Documents/es-tools-models/labs/projectb/ast-files/asts/if1.c:1:1, line:8:1> line:1:1 fred 'int ()'
+  `-CompoundStmt 0x55d692898530 <col:7, line:8:1>
+    |-DeclStmt 0x55d692898278 <line:2:1, col:6>
+    | `-VarDecl 0x55d692898218 <col:1, col:5> col:5 used y 'int'
+    |-DeclStmt 0x55d692898308 <line:3:1, col:6>
+    | `-VarDecl 0x55d6928982a8 <col:1, col:5> col:5 used x 'int'
+    |-BinaryOperator 0x55d692898368 <line:4:1, col:3> 'int' '='
+    | |-DeclRefExpr 0x55d692898320 <col:1> 'int' lvalue Var 0x55d692898218 'y' 'int'
+    | `-IntegerLiteral 0x55d692898348 <col:3> 'int' 9
+    |-BinaryOperator 0x55d6928983d8 <line:5:1, col:3> 'int' '='
+    | |-DeclRefExpr 0x55d692898390 <col:1> 'int' lvalue Var 0x55d6928982a8 'x' 'int'
+    | `-IntegerLiteral 0x55d6928983b8 <col:3> 'int' 4
+    `-IfStmt 0x55d6928984f8 <line:6:1, line:7:6>
+      |-<<<NULL>>>
+      |-<<<NULL>>>
+      |-BinaryOperator 0x55d692898460 <line:6:5, col:8> 'int' '=='
+      | |-ImplicitCastExpr 0x55d692898448 <col:5> 'int' <LValueToRValue>
+      | | `-DeclRefExpr 0x55d692898400 <col:5> 'int' lvalue Var 0x55d692898218 'y' 'int'
+      | `-IntegerLiteral 0x55d692898428 <col:8> 'int' 9
+      |-BinaryOperator 0x55d6928984d0 <line:7:4, col:6> 'int' '='
+      | |-DeclRefExpr 0x55d692898488 <col:4> 'int' lvalue Var 0x55d6928982a8 'x' 'int'
+      | `-IntegerLiteral 0x55d6928984b0 <col:6> 'int' 7
+      `-<<<NULL>>>
